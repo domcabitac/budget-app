@@ -3,6 +3,29 @@
 .root {
     display: flex;
     width: 100%;
+    position: relative;
+
+    .x-icon-button {
+        position: absolute;
+        height: 34px;
+        width: 34px;
+        border-radius: 50%;
+        background: $dark;
+        right: -17px;
+        top: -17px;
+        background-image: url('../../../assets/delete_icon.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        transform: scale(0);
+        transition: opacity 0.2s ease-in, transform 0.2s ease-in;
+        opacity: 0;
+    }
+    &:hover{
+        .x-icon-button {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
 }
 
 .budget-item{
@@ -13,6 +36,8 @@
     border: 5px;
     cursor: pointer;
     .description{
+        display: flex;
+        align-items: center;
         flex-grow: 1;
         font-size: 18px;
         margin-left: 5px;
