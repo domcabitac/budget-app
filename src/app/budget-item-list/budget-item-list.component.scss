@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 0 50px;
     .budget-items-container{
         display: flex;
         max-width: 680px;
@@ -25,7 +25,7 @@
             .budget-items {
                 display: flex;
                 flex-direction: column;
-                margin-top: 10px;
+                margin: 15px 0;
             }
         }
         .income-col{
@@ -37,6 +37,17 @@
         .expenses-col{
             h1{
                 color: $red;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .budget-items-section{
+        .budget-items-container{
+            flex-direction: column;
+            .budget-items {
+                margin: 10px 0;
             }
         }
     }

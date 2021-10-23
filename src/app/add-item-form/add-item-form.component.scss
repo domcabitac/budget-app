@@ -1,0 +1,16 @@
+@media only screen and (max-width: 769px) {
+    .field-body{
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+        .field {
+            margin: 0 5px;
+        }
+        .is-narrow {
+            width: 25%;
+        }
+    }
+    .input, button {
+        font-size: 0.8rem;
+    }
+  }

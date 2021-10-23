@@ -26,7 +26,7 @@
     h2 {
          font-family: 'Lato';
          font-weight: 300;
-         font-size: 58px;
+         font-size: 60px;
          color: white;
 
          &.green {
@@ -45,6 +45,15 @@
     .add-item-container{
         width: 680px;
         height: 50px;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .total-budget-section {
+        height: 150px;
+        h2 {
+            font-size: 45px;
+        }
     }
 }
 
